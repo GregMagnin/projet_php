@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.containerlogin {
+    width: 470px;
+    height: 400px;
+    margin: auto;
+    margin-top: 30px;
+    border: solid black 2px;
+    border-radius: 15px;
+}
+.loginBox {
+    width: 470px;
+    height: 380px;
+    margin: auto;   
+    box-sizing: 2px solid black;
+}
+
+.loginTitle {
+    display: flex;
+    height: 100px;
+    width: 466px;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Lobster', sans-serif;
+    background-color: #7cc0F3;
+    font-size: 70px;
+    border-radius: 15px 15px 0 0;
+    
+}
+
+.loginTitle p {
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+
+hr {
+    display: block;
+    width: 99.2%;
+    border:solid black;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+
+input {
+    border-radius: 10px;
+    border: solid 2px black;
+    width: 300px;
+    height: 50px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    font-family: 'Josefin sans', sans-serif;
+}
+
+input[type="pass"] {
+    font-size: 20px;
+    font-family: 'Josefin sans', sans-serif;
+}
+
+
+::placeholder {
+    color: grey;
+    font-family: 'Josefin sans', sans-serif;
+    font-size: 20px;
+    
+}
+
+.loginForm p {
+    text-align: center;
+    font-family: 'Josefin sans', sans-serif;
+    margin-top: 30px;
+}
+
+.loginForm a {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: #7cc0f3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header img {
+    height: 60px;
+}
+
+.submit {
+    margin-top: 10px;
+    background:linear-gradient(to right,rgba(0,0,0,0),#FE85C8 20%,#7CC0F3 80%);
+}

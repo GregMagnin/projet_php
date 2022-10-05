@@ -12,7 +12,7 @@ $queries = [
     )"
 ];
 
-$queries[1] = 
+$queries[1] =
     "CREATE TABLE organization (
        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
        name VARCHAR(60) NOT NULL
@@ -42,6 +42,18 @@ $queries[3] =
     PRIMARY KEY (course_id, user_id)
     )"
 ;
+
+$queries[5] = 
+"ALTER TABLE course_user ADD CONSTRAINT FK_course_user_course_id FOREIGN KEY (course_id) REFERENCES courses (id) ON DELETE CASCADE";
+
+$queries[6] = 
+"ALTER TABLE course_user ADD CONSTRAINT FK_course_user_user_id FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE";
+
+$queries[7] = 
+"ALTER TABLE course_organization ADD CONSTRAINT FK_course_organization_course_id FOREIGN KEY (course_id) REFERENCES courses (id) ON DELETE CASCADE";
+
+$queries[8] =
+"ALTER TABLE course_organization ADD CONSTRAINT FK_course_organization_organization_id FOREIGN KEY (organization_id) REFERENCES organization (id) ON DELETE CASCADE";
 
 foreach ($queries as $query) {
     try {
