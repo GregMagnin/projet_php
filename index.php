@@ -4,7 +4,7 @@
 require_once 'helpers.php';
 
 switch (getUri()) {
-    case '/':
+    case '/register':
         require_once controllers('register');
         break;
         case '/login':
